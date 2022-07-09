@@ -5,4 +5,17 @@
     <string name="altura">Altura (cm)</string>
     <string name="peso">Peso (kg)</string>
     <string name="calc">Calcular</string>
+
+    <string name="severamente_abaixo_peso">Severamente abaixo do peso</string>
+    <string name="muito_abixo_peso">Muito abaixo do peso</string>
+    <string name="abaixo_peso">Abaixo do peso</string>
+    <string name="ideal">Peso ideal</string>
+    <string name="acima_peso">Acima do peso</string>
+    <string name="muito_acima_peso">Muito acima do peso</string>
+    <string name="severamente_acima_peso">Severamente acima do peso</string>
+    <string name="extremamente_peso">Extremamente acima do peso</string>
+
+
+
+
 </resources>
