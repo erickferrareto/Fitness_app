@@ -21,24 +21,27 @@
             android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/editPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/peso"
             style="@style/editForm" />
 
         <EditText
+            android:id="@+id/editAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/altura"
             style="@style/editForm" />
 
         <Button
+            android:id="@+id/btn_calculate"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calc"
             android:backgroundTint="#000" />
 
-    </LinearLayout>'
+    </LinearLayout>
 
 </ScrollView>
