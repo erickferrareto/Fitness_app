@@ -1,11 +1,10 @@
 package com.example.fitness_app.model
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
+import androidx.room.*
 
 @Database(entities = [Calc::class], version = 1)
+@TypeConverters(dateConverter::class)
 abstract class AppDataBase : RoomDatabase(){
     abstract fun calcDao() : CalcDao
     companion object{

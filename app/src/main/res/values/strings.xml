@@ -14,8 +14,8 @@
     <string name="muito_acima_peso">Muito acima do peso</string>
     <string name="severamente_acima_peso">Severamente acima do peso</string>
     <string name="extremamente_peso">Extremamente acima do peso</string>
-
-
+    <string name="save">Salvar</string>
+    <string name="salved">Registro Salvo</string>
 
 
 </resources>

@@ -1,13 +1,14 @@
 package com.example.fitness_app
 
 import android.app.AlertDialog
-import android.app.Dialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.fitness_app.model.App
+import com.example.fitness_app.model.Calc
 import kotlin.math.roundToInt
 
 class IMC_Activity : AppCompatActivity() {
@@ -50,6 +51,18 @@ class IMC_Activity : AppCompatActivity() {
 
                     }
                 })
+                .setNegativeButton(R.string.save) { dialog, which ->
+                    Thread{
+                        var app = application as App
+                        var dao = app.db.calcDao()
+                        dao.insert(Calc(tipo = "IMC", res = calcImc))
+
+                        runOnUiThread {
+                            Toast.makeText(this@IMC_Activity, R.string.salved, Toast.LENGTH_LONG).show()
+                        }
+                    }.start()
+
+                }
                 .create()
                 .show()
         }
